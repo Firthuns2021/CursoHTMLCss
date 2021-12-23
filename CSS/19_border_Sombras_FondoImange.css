@@ -1,0 +1,157 @@
+/*div{*/
+/*    height: 200px;*/
+/*    width: 100px;*/
+/*    background: orange;*/
+/*    margin: 50px;*/
+/*    border-color: green;*/
+/*    border-style: solid;*/
+/*    border-width: 10px;*/
+
+/*    border-top-style: dashed;*/
+
+/*    border-radius: 20px;*/
+/*    !*border-top-right-radius: 50px;*!*/
+/*    border-top-right-radius: 50px 30px;*/
+/*}*/
+
+
+
+
+/*
+
+Los tres atributos fundamentales para
+establecer el borde a un elmento son:
+
+    border-width: indica la anchura del borde
+    border-style: indica el tipo del borde
+        (solid, dashed, double, dotted,
+        , outset o none)
+    border-color: indica el color del borde
+
+Estos atributos pueden resumirse en
+una sola linea con la estructura
+border: anchura estilo color.
+
+Así mismo se puede aplicar a un borde
+concreto con
+border-top-style o
+border-left-color, etc.
+
+
+
+border-radius: 20px;
+border-top-left-radius: 30px 10px
+
+Se puede establecer el radio de curbatura
+de las esquinas de forma igualada,
+pero tambien se pueden hacer curvaturas
+avanzadas especificando en qué esquina
+se aplicarán y cual será el radio en
+el eje X y en el eje Y para aplicar el radio
+de la esquina.
+
+*/
+
+/*div.sombras{*/
+/*    height: 200px;*/
+/*    width: 200px;*/
+/*    background: white;*/
+/*    margin: 50px;*/
+/*    text-align: center;*/
+/*    border: 1px solid black;*/
+/*    box-shadow: 1px 1px 0 gray,*/
+/*    2px 2px 0 gray,*/
+/*    3px 3px 0 gray,*/
+/*    4px 4px 0 gray,*/
+/*    5px 5px 0 black,*/
+/*    6px 6px 0 black;*/
+/*}*/
+
+/*p{*/
+/*    position: relative;*/
+/*    top: 70px;*/
+/*    font-size: 20px;*/
+/*    text-shadow: 0px 0px 10px #374692;*/
+/*    color: white*/
+/*}*/
+
+
+
+
+/*
+
+La estructura de las sombras aplicadas a cajas
+(box-shadow) o a texto (text-shadow) tiene
+4 valores : DesplazamientoHorizontal
+            DesplazamientoVertical
+            Difuminado
+            Color
+
+Añadiendo el valor "inset" como primer valor
+del conjunto box-shadow seguido de la
+estructura común, establecemos la sombra de
+forma interna en el elemento al que se la
+queramos asignar.
+
+Para usar múltiples sombras aplicadas al mismo
+elemento solo hay que separar cada sombra con
+una coma (,) y respetar la estructura básica.
+
+*/
+div{
+
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    margin: 50px;
+    background:  url("assets/imagen.jpg");
+    /*background-repeat: no-repeat ;*/
+    /*!*background-repeat: repeat-x;*!*/
+    /*background-repeat: repeat-y;*/
+    /*background-position: border-box    ;*/
+}
+
+figure{
+   background:  url("assets/imagen.jpg");
+}
+
+.imagen{
+    width: 100%;
+    background: url("assets/firma.gif"), url("assets/imagen.jpg");
+
+
+    background-repeat: no-repeat, repeat;
+    background-position: right bottom,
+    center center;
+
+}
+
+
+/*
+
+Para posicionar el fondo de un elemento
+tenemos 3 opciones:
+border-box (desde el borde),
+padding-box (desde la zona del padding) y
+content-box (desde la zona del contenido)
+
+*/
+
+.degradados {
+
+    /*background: -moz-linear-gradient(*/
+    /*        right ,*/
+    /*        blue 0%,*/
+    /*        red 30%,*/
+    /*        green 80%,*/
+    /*        yellow 100%*/
+    /*);*/
+
+    background: -moz-radial-gradient(
+            center ,
+            blue 0%,
+            red 30%,
+            green 80%,
+            yellow 100%
+    );
+}
