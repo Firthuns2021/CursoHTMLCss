@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Selector de Atributos y Colisión de Estilos</title>
+
+        <link rel="stylesheet" href="assets/normalize.css">
+
+        <link rel="stylesheet" href="7_selectorAtributosColisionadorEstilos.css">
+
+        <script src="assets/modernizr-custom.js"></script>
+    </head>
+    <body>
+
+            <header>
+                <h2 title="main">Titulo secundario</h2>
+                <h2 title="main cabecera otro">Titulo secundario</h2>
+                <h2 title="main">Titulo secundario</h2>
+            </header>
+                <h2>sin etiquetas especiales</h2>
+                <h2 lang="es-MX">lang="es-MX"</h2>
+                <h2 lang="es-ES">lang="es-ES"</h2>
+    </body>
+</html>
+<!--/*************************************************-->
+<!--***   colision de estilos-->
+<!--***-->
+<!--***-->
+<!--***    1- css del navegador-->
+<!--***    2- css del usuario-->
+<!--***    3- archivos css enlazados en el orden añadidos-->
+<!--***    4- propiedades que se heredan-->
+<!--***    5- propiedades propias del elemento-->
+<!--***    6- clases asignadas, y en el mismo orden-->
+<!--***    7- identificador-->
+<!--***    8- !important-->
+
+<!--**********************************************/-->

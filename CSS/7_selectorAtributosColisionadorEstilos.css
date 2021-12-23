@@ -1,0 +1,13 @@
+/*h2[title]{*/
+/*    color: red;*/
+/*}*/
+h2[title="main"]{
+    color: purple;
+}
+h2[title ~="cabecera"]{
+    color: rosybrown;
+}
+
+h2[lang |= "es"]{
+    color: blue;
+}

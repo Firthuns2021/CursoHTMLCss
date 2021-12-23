@@ -1,17 +1,12 @@
-/*
-elemento {
-	propiedad : valor ;
-	propiedad : valor ;
-	propiedad : valor ;
-	propiedad : valor ;
-	propiedad : valor ;
-}
-*/
 
 header {
     width: 100%;
     height: 50px;
     background: black;
+}
+img{
+    width: 100%;
+    height: 60%;
 }
 div{
     width: 50px;
@@ -25,5 +20,5 @@ footer {
     height: 50px;
     background: black;
     bottom: 0;
-    position: fixed;
+    position: relative;
 }

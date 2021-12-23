@@ -1,0 +1,41 @@
+
+
+.padre{
+    width: 350px;
+    height: 1350px;
+    margin: 25px;
+    background: orange;
+    position: relative; /* le damos un position relative
+    para que los hijos tomen como referencia al padre y no al body
+    que seria el padre de éste*/
+
+}
+/*.padre >div{*/
+/*    display: inline-block;*/
+/*    !*vertical-align: bottom;*!*/
+
+/*}*/
+.hijo1{
+    width: 50px;
+    height: 50px;
+    background: red;
+    /*position: static;*/
+    /*top: 30px;!* esta propiedad no funciona con el position static   *!*/
+    position: fixed;
+    top: 0px;
+
+}
+/*.hijo2{*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    background: grey;*/
+/*    position: relative;*/
+/*    top: 60px;*/
+/*    left: 200px*/
+/*}*/
+.hijo3{
+    width: 100px;
+    height: 100px;
+    background: purple;
+
+}

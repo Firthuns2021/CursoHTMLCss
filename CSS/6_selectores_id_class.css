@@ -1,0 +1,53 @@
+/*************************************************
+ ***   colision de estilos
+***
+***
+***    1- css del navegador
+***    2- css del usuario
+***    3- archivos css enlazados en el orden añadidos
+***    4- propiedades que se heredan
+***    5- propiedades propias del elemento
+***   6- clases asignadas, y en el mismo orden
+***    7- identificador
+***   8- !important
+
+**********************************************/
+/*
+header h2, h3{
+    color: red;
+}
+
+p{
+    color: #00a379;
+}
+
+p#azul{
+    color: orange;
+}
+
+ // identificador class
+.prueba{
+    color: darkviolet;
+}
+.grande{
+    font-size: 20px;
+}
+// la siguiente instruccion quiere decir que todo párrafo que le preceda otra etiqueta de tipo 'parrafo'
+  //                                             se le aplica  las siguientes propiedades
+p+p{
+    font-weight: bolder;
+    font-size: 25px;
+}
+*/
+article{
+    margin-left: 20px;
+}
+/* los parrafos hijos de div*/
+div > p{
+    color: red;
+}
+/* etiquetas hermanos*/
+p ~ p{
+    color: green;
+}
+
